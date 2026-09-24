@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+.font-arabic {
+  font-family: 'Cairo', 'Amiri', serif;
+}
+
+.font-arabic-calligraphy {
+  font-family: 'Amiri', serif;
+}
+
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-page-break {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .print-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .bulletin-sheet {
+    box-shadow: none !important;
+    border: 1px solid #1e293b !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
+}

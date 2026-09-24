@@ -1,0 +1,6 @@
+{
+  "name": "ALMAARIFA - Gestion & Bulletins Scolaires Bilingues",
+  "description": "Système officiel de calcul des notes, classement par ordre de mérite et génération des bulletins scolaires bilingues (Français et Arabe) pour l'établissement ALMAARIFA THIERNO DJIBRIL OUSMANE BA au Sénégal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
